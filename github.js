@@ -50,6 +50,31 @@ searchbtn.addEventListener("click", async function() {
 
 })
 
+function addGithubTotheDom(data){
+    profiledisplay.innerHTML=`
+      <div class="profile-info">
+                    <img src="${data.avatar_url}" alt="" width="170px" height="170px">
+                    <div class="name">username: ${data.username}</div>
+                    <div class="bio">Bio:${data.bio}</div>
+                    
+                    <div class="email">Email: ${data.email}</div>
+                    <div class="followers">Followers:${data.followers}</div>
+                    <div class="following">Following: ${data.following}</div>
+                    <button type="submit" id="save">save</button>
+                  
+                   
+                </div> 
+    
+    
+    
+    `
+
+    AddLocalstorage(data,profiledisplay)
+
+}
+
+
+
 
 
 
