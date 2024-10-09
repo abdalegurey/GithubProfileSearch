@@ -44,4 +44,10 @@ clear.addEventListener("click", function(){
 })
 
 
+Back.addEventListener("click", function(e){
+    e.preventDefault();
+    window.location.href = "github.html";
+ 
+})
+
 
