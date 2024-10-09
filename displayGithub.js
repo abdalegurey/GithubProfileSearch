@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded',function() {
   
 
 });
+clear.addEventListener("click", function(){
+    localStorage.clear();
+    location.reload();
+})
 
 
 
