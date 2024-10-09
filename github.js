@@ -73,7 +73,22 @@ function addGithubTotheDom(data){
 
 }
 
+function AddLocalstorage(data,profileinfo){
+    console.log(profileinfo)
 
+    let save= profiledisplay.querySelector("#save");
+    
+  save.addEventListener("click",function(){
+      let olddata= JSON.parse(localStorage.getItem('github')) || [];
+     console.log(olddata)
+      olddata.push(data);
+      localStorage.setItem('github', JSON.stringify(olddata));
+   
+      alert("Saved Successfully a github profile")
+
+  })
+
+}
 
 
 
