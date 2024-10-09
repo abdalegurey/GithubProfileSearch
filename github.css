@@ -48,6 +48,10 @@ input,button{
     margin-bottom: 10px;
 }
 
+.paragraph{
+    color: black;
+}
+
 .profile-display{
     background-color: white;
     padding: 10px 30px;
